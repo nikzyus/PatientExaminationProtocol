@@ -2,4 +2,15 @@
     <string name="app_name">PatientExaminationProtocol</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textAuth">Авторизация</string>
+    <string name="txtLogin">Логин</string>
+    <string name="txtPassword">Пароль</string>
+    <string name="txtMenu">Главное меню</string>
+    <string name="txtEmail">электронная почта</string>
+    <string name="Patient">Пациенты</string>
+    <string name="spravInfo">Справочная информация</string>
+    <string name="txtDiagnoses">Диагнозы</string>
+    <string name="txtSymptoms">Симптомы</string>
+    <string name="personalInfo">Личная информация</string>
+    <string name="btnLogIn">Войти</string>
 </resources>

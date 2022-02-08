@@ -1,4 +1,4 @@
-package com.example.notes.patientexaminationprotocol.fragments
+package com.example.notes.patientexaminationprotocol.fragments.auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.notes.patientexaminationprotocol.R
 import com.example.notes.patientexaminationprotocol.databinding.FragmentAuthBinding
 
+/*Фрагмент авторизации*/
 
 class AuthFragment : Fragment() {
 
@@ -22,9 +23,9 @@ class AuthFragment : Fragment() {
         authViewModel = ViewModelProvider(this)[AuthViewModel::class.java]
         binding.authVM = authViewModel
         authViewModel.context = requireContext()
+        authViewModel.binding = binding
         return binding.root
     }
 
-    
 
 }

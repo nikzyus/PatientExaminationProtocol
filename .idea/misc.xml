@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/fragment_auth.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/fragment_auth.xml" value="0.4" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/fragment_menu.xml" value="0.5123456790123457" />
       </map>
     </option>
   </component>
