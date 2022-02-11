@@ -3,9 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/drawable/ic_healthicons_human_resoruces_negative.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/drawable/ic_menu_diagnoses.xml" value="0.2712820512820513" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/drawable/ic_menu_doctor.xml" value="0.2712820512820513" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/drawable/ic_menu_hospital.xml" value="0.2712820512820513" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/drawable/ic_menu_patient.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/drawable/ic_menu_protocols.xml" value="0.18425925925925926" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/drawable/ic_menu_symptoms.xml" value="0.2712820512820513" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/drawable/square.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/diagnoses_item.xml" value="0.536" />
         <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/fragment_auth.xml" value="0.4" />
-        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/fragment_menu.xml" value="0.5123456790123457" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/fragment_diagnoses.xml" value="0.536" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/fragment_hospital_info.xml" value="0.1" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/fragment_menu.xml" value="0.4" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/fragment_personal_info.xml" value="0.25" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/fragment_symptoms.xml" value="0.3203125" />
+        <entry key="..\:/Users/Nik/AndroidStudioProjects/PatientExaminationProtocol/app/src/main/res/layout/menu_button.xml" value="0.4" />
       </map>
     </option>
   </component>

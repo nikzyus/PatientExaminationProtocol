@@ -19,162 +19,160 @@
 
         <TextView
             android:id="@+id/txtMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"
             android:text="@string/txtMenu"
             android:textStyle="bold"
             android:textColor="@color/black"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:textSize="22dp"
-            android:layout_margin="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             />
 
         <View
-            android:id="@+id/menuDivider"
-            android:layout_width="wrap_content"
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="?android:attr/listDivider"
             app:layout_constraintTop_toBottomOf="@id/txtMenu"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/divider"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="5dp"/>
+            android:orientation="horizontal">
 
+            <include
+                android:id="@+id/btn_patients"
+                layout="@layout/menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="@{menuVM::onClickPatients}"
+                />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_patients"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Patient"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="10dp"
-            app:layout_constraintTop_toBottomOf="@id/txtMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            android:padding="20dp"
-            app:cornerRadius="8dp"
-            android:backgroundTint="@color/black"/>
+            <include
+                android:id="@+id/btn_protocols"
+                layout="@layout/menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="@{menuVM::onClickProtocols}"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_protocols"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Протоколы осмотра"
-            android:layout_marginTop="25dp"
-            app:layout_constraintTop_toBottomOf="@id/txtMenu"
-            app:layout_constraintStart_toEndOf="@id/btn_patients"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            app:cornerRadius="8dp"
-            android:padding="20dp"
-            android:backgroundTint="@color/black"/>
+        </LinearLayout>
 
         <View
-            android:id="@+id/menuDivider2"
-            android:layout_width="wrap_content"
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="?android:attr/listDivider"
-            app:layout_constraintTop_toBottomOf="@id/btn_patients"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="5dp"/>
+            app:layout_constraintTop_toBottomOf="@id/ll_menu"
+            android:layout_marginTop="15dp"/>
 
         <TextView
             android:id="@+id/txtMenu2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/btn_patients"
+            app:layout_constraintTop_toBottomOf="@id/divider2"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="@string/spravInfo"
+            android:layout_margin="10dp"
+            android:text="@string/SpravInfo"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="18dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
             />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_diagnoses"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/ll_menu2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/txtDiagnoses"
             app:layout_constraintTop_toBottomOf="@id/txtMenu2"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:padding="20dp"
-            app:cornerRadius="8dp"
-            android:backgroundTint="@color/black"
-            />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_symptoms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txtSymptoms"
-            app:layout_constraintTop_toBottomOf="@id/txtMenu2"
-            app:layout_constraintStart_toEndOf="@id/btn_diagnoses"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
-            android:padding="20dp"
-            app:cornerRadius="8dp"
-            android:backgroundTint="@color/black"
-            />
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/btn_diagnoses"
+                layout="@layout/menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="@{menuVM::onClickDiagnoses}"
+                />
+
+            <include
+                android:id="@+id/btn_symptoms"
+                layout="@layout/menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="@{menuVM::onClickSymptoms}"/>
+
+        </LinearLayout>
 
         <View
-            android:id="@+id/menuDivider3"
-            android:layout_width="wrap_content"
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="?android:attr/listDivider"
-            app:layout_constraintTop_toBottomOf="@id/btn_diagnoses"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="5dp"/>
+            app:layout_constraintTop_toBottomOf="@id/ll_menu2"
+            android:layout_marginTop="15dp"/>
 
         <TextView
             android:id="@+id/txtMenu3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/btn_diagnoses"
+            app:layout_constraintTop_toBottomOf="@id/divider3"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="Прочие сведения"
+            android:layout_margin="10dp"
+            android:text="@string/otherInfo"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="18dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
             />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_personalInfo"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/ll_menu3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/personalInfo"
             app:layout_constraintTop_toBottomOf="@id/txtMenu3"
             app:layout_constraintStart_toStartOf="parent"
-            android:padding="20dp"
-            app:cornerRadius="8dp"
-            android:backgroundTint="@color/black"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_organizationInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Информация о больнице и отделении"
-            app:layout_constraintTop_toBottomOf="@id/btn_personalInfo"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
-            android:padding="20dp"
-            app:cornerRadius="8dp"
-            android:backgroundTint="@color/black"
-            />
+            <include
+                android:id="@+id/btn_personalInfo"
+                layout="@layout/menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="@{menuVM::onClickPersonalInfo}"
+                />
 
+            <include
+                android:id="@+id/btn_hospitalInfo"
+                layout="@layout/menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="@{menuVM::onClickHospitalInfo}"/>
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 </layout>

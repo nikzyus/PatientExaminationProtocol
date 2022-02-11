@@ -104,7 +104,8 @@
             android:text="@string/btnLogIn"
             app:cornerRadius="20dp"
             android:padding="15dp"
-            android:backgroundTint="@color/black"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/blackDefault"
             />
 
 

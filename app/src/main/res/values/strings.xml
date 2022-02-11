@@ -1,16 +1,29 @@
 <resources>
     <string name="app_name">PatientExaminationProtocol</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="textAuth">Авторизация</string>
     <string name="txtLogin">Логин</string>
     <string name="txtPassword">Пароль</string>
     <string name="txtMenu">Главное меню</string>
     <string name="txtEmail">электронная почта</string>
     <string name="Patient">Пациенты</string>
-    <string name="spravInfo">Справочная информация</string>
+    <string name="SpravInfo">Справочная информация</string>
     <string name="txtDiagnoses">Диагнозы</string>
     <string name="txtSymptoms">Симптомы</string>
     <string name="personalInfo">Личная информация</string>
     <string name="btnLogIn">Войти</string>
+    <string name="Protocols">Протоколы осмотров</string>
+    <string name="otherInfo">Прочее</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="docNumber">Номер лечащего врача</string>
+    <string name="name">Имя</string>
+    <string name="patronymic">Отчество</string>
+    <string name="lastName">Фамилия</string>
+    <string name="dateBegin">Дата начала работы</string>
+    <string name="endJob">Дата окончания работы</string>
+    <string name="jobTitle">Наименование должности</string>
+    <string name="hospitalInfo">Информация о больнице и отделении</string>
+    <string name="actualDiagnoses">Список актуальных диагнозов</string>
+    <string name="actualSymptoms">Список актуальных симптомов</string>
 </resources>
